@@ -79,6 +79,8 @@ def crawl_url(url, run_headless=True):
 
 	browser.find_element_by_css_selector("button.submit.btn.primary-btn").click()
 	browser = scrollDown3(browser)
+
+
 	target_set = set()
 
 	all_targets = browser.find_elements_by_class_name("u-linkComplex-target")
@@ -115,4 +117,4 @@ def crawl_url(url, run_headless=True):
 
 if __name__ == '__main__':
 	url = "https://twitter.com/mixlamalice/followers/"
-	crawl_url(url)
+	crawl_url(url,False)
