@@ -101,7 +101,7 @@ if __name__ == '__main__':
 	if platform.system() == "Darwin" :
 		PHANTOMJS_PATH = "./phantomjs/bin/phantomjs"
 	else :
-		PHANTOMJS_PATH = "./phantomjs/bin/phantomjs_linux_198"
+		PHANTOMJS_PATH = "./phantomjs/bin/phantomjs_linux64"
 
 	url = "https://twitter.com/mixlamalice/followers/"
 	crawl_url(url,run_headless=False)
