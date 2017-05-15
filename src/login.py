@@ -65,9 +65,9 @@ def crawl_url(url, run_headless=True):
 		display.start()
 
 	url = correct_url(url)
-	browser = webdriver.PhantomJS("./phantomjs/bin/phantomjs")
+	#browser = webdriver.PhantomJS("./phantomjs/bin/phantomjs")
 	#browser = webdriver.Safari()
-	#browser = webdriver.Firefox()
+	browser = webdriver.Chrome("./phantomjs/bin/chromedriver")
 	browser.get(url)
 
 	username = browser.find_element_by_class_name("js-username-field")
