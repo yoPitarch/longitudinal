@@ -117,4 +117,4 @@ def crawl_url(url, run_headless=True):
 
 if __name__ == '__main__':
 	url = "https://twitter.com/mixlamalice/followers/"
-	crawl_url(url)
+	crawl_url(url,run_headless=False)
