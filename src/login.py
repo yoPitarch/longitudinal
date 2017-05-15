@@ -65,7 +65,7 @@ def crawl_url(url, run_headless=True):
 		display.start()
 
 	url = correct_url(url)
-	browser = webdriver.PhantomJS("./phantomjs/bin/phantomjs")
+	browser = webdriver.PhantomJS(PHANTOMJS_PATH)
 	browser.set_window_size(1024, 768)
 	#browser = webdriver.Safari()
 	#browser = webdriver.Chrome("./phantomjs/bin/chromedriver")
@@ -101,7 +101,7 @@ if __name__ == '__main__':
 	if platform.system() == "Darwin" :
 		PHANTOMJS_PATH = "./phantomjs/bin/phantomjs"
 	else :
-		PHANTOMJS_PATH = "./phantomjs/bin/phantomjs"
+		PHANTOMJS_PATH = "./phantomjs/bin/phantomjs_linux_198"
 
 	url = "https://twitter.com/mixlamalice/followers/"
 	crawl_url(url,run_headless=False)
