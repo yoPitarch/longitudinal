@@ -11,7 +11,7 @@ def loadFullPage(driver):
 	prior = 0
 	while True:
 		driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-		current = len(WebDriverWait(driver, 30).until(EC.presence_of_all_elements_located((By.CLASS_NAME, "ProfileCard-screennameLink"))))
+		current = len(WebDriverWait(driver, 60).until(EC.presence_of_all_elements_located((By.CLASS_NAME, "ProfileCard-screennameLink"))))
 		print(current)
 		if current == prior:
 			return current
