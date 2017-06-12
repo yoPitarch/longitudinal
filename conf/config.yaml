@@ -1,0 +1,6 @@
+urlTrends: https://trends24.in/united-states/new-york/
+pathEventToTrack: ../out/info/trends.txt
+pathLatestTweetPerEvent: ../out/info/latest.txt
+pathDoneEvent: ../out/info/done.txt
+pathPhantomjs: ../bin/phantomjs_250
+pathMediaAccount: ../out/info/medias.txt
